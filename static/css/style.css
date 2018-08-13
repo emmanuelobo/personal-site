@@ -19,7 +19,7 @@
 
 body {
     /* background: url('/media/gplaypattern.png'); */
-    background: linear-gradient(#10598d, #276c9de3);
+    background: linear-gradient(#10598d, #276c9de3), url('/media/gplaypattern.png');
   }
   
   body, h1, p {
@@ -163,10 +163,11 @@ body {
   }
 
   .short-bio{
-    text-align: justify;
+    text-align: center;
     font-size: 17px; 
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Exo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: -10px;
   }
   

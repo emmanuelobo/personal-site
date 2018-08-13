@@ -29,11 +29,38 @@
             <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="http://blog.emmanuelobo.com">Work</a> </div>
             <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="http://blog.emmanuelobo.com">News</a> </div>
             <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="http://blog.emmanuelobo.com">About</a> </div>
-            <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="http://blog.emmanuelobo.com">Contact</a> </div>
+            <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="#" data-toggle="modal" data-target="#emailModal" data-whatever="@emmanuel">Contact</a> </div>
             <div class="col-md-1"></div>
-            <!-- <div class="col-md-2 nav-menu-item"><img src="/media/logo.svg" height="50" width="80" alt="logo"> </div>  -->
-            <!-- <div class="col-md-1 nav-menu-item"> <a href="http://github.com/emmanuelobo" target="_blank"><img src="/media/github.svg" height="25" width="30" alt="github"></a> </div> -->
         </div>
+
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
     <h1 id="nameHeader" class="name-header animated flash" >Manny Ohh!</h1>
     <div class="main"  >
@@ -46,11 +73,20 @@
             <div class="col-md-1"></div>
             <div class="col-md-6">
                 <!-- <p style="color: white;">I like to write code, mainly in Python and JavaScript</p> -->
-                <p class="short-bio">I like to create things and it just so happened that I also have a passion for technology 😱, 
-              which explains how I became a Software Engineer 💻. Doing something you're passionate about for a living is just as good as it sounds 🙏.
+                <!-- <p class="short-bio">I like to create things and it just so happened that I also have a passion for technology 😱, 
+              which explains how I became a <b>Software Engineer</b> 💻. Doing something you're passionate about for a living is just as good as it sounds 🙏.
               In my personal time I like to work on side projects, contribute to open source projects, 
               work out 💪, play basketball (I root for any team not named the Golden State Warriors 🙃), read, kick it with friends, dance 🕺 (in the privacy of my house lol), 
-              skateboard, meet new people, visit new places and try new things. </p>
+              skateboard, meet new people, visit new places and try new things. </p> -->
+              <p class="short-bio" style="font-size: 40px;">
+                  Passionate about tech. 
+                  <br>
+                  I enjoy writing code.
+                  <br>
+                  <b style="color:purple">Python</b> & <b style="color: yellow;">JavaScript</b>.
+                  <br>
+                  Check Out My <a href="blog.emmanuelobo.com" style="color:bisque;">Blog</a> ✍️.  
+              </p>
             </div>
             
         </div>
@@ -71,9 +107,26 @@
         </div>
         
     </div>
+
+    <!-- <footer>
+        ©Emmanuel Obogbaimhe
+    </footer> -->
+
+
+
 </body>
 
 <script>
+        $('#emailModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('New message to ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+          })
+
         $('#nameHeader').on('mouseenter', function(){
             $(this).removeClass('flash');
             $(this).addClass('swing');
