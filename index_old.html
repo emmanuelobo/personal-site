@@ -1,0 +1,91 @@
+<head>
+    <title>Emmanuel Obogbaimhe</title>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="static/jquery/dist/jquery.slim.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar animated fadeIn">
+            <ul class="nav">
+                <li class="nav-item"><a href="http://emmanuelobo.com">Home</a></li>
+                <li class="nav-item"><a href="http://blog.emmanuelobo.com">Blog</a></li>
+                <li class="nav-item"><a href="http://projects.emmanuelobo.com">Projects</a></li>
+            </ul>
+        </div>
+        <div class="container" style="text-align: center; margin: 5.5% auto;">
+            <div class="image-container animated bounceInDown">
+                    <img src="media/profile_pic.JPG">
+            </div>
+            
+            <h1 class="header-title animated bounceInUp">Emmanuel Obogbaimhe</h1>
+            <p class="header-desc animated bounceInUp">Believer. Developer. Innovator.</p>
+            <div class="custom-animation fadeIn social-media">
+                <a href="http://medium.com/@emmaoobo"><img src="./media/medium.svg" class="social-icon"></a>
+                <a href="http://twitter.com/emmaoobo"><img src="./media/twitter.svg" class="social-icon"></a>
+                <a href="http://github.com/emmanuelobo"><img src="./media/github.svg" class="social-icon"></a>
+                <a href="http://linkedin.com/in/emmaoobo"><img src="./media/linkedin.svg" class="social-icon"></a>
+            </div>
+
+            <div class="row" style="margin-top:17px;">
+                <button class="btn btn-info menu-btn" id="about-btn">About Me</button>
+                <button class="btn btn-info menu-btn" id="skills-btn">Skills</button>
+                <button class="btn btn-info menu-btn" id="contact-btn">Contact Me</button>
+            </div>
+        </div>
+
+        <div class="container about-me item">
+            <h4>About Me</h4>
+            <p>Emmanuel is a Software Developer currently working at Fannie Mae. He is passionate about building fully functioning web applications. Python and JavaScript enthusiast. Huge sports fan, basketball specifically (Go Wizards)! Emmanuel worked as a freelance web developer in 2016. Feel free to check out some of his <a href="http://github.com/EmmanuelObo">work</a>.</p>
+        </div>
+
+        <div class="container skills item">
+            <h4>Skills</h4>
+            <img src="./media/python-logo-generic.svg" class="skill-logo">
+            <img src="./media/django-logo-positive.svg" class="skill-logo">
+            <img src="./media/javascript.svg" class="skill-logo">
+            <img src="./media/java-logo.svg" class="skill-logo">
+            <img src="./media/html-5.svg" class="skill-logo">
+            <img src="./media/css-3.svg" class="skill-logo">
+            <img src="./media/angular-icon.svg" class="skill-logo">
+        </div>
+
+        <div class="container contact-me item" >
+            <h4>Contact Me</h4>
+            <div class="form-group">
+                <form action="mailto:emmaoobo@gmail.com" method="post" id="contact-form" enctype="text/plain">
+                    <input class="form-control" type="text" name="full-name" id="name" placeholder="full name" style="margin: 0px 0px 6px 0px;"> 
+                    <input class="form-control" type="email" name="email" placeholder="email" style="margin: 0px 0px 6px 0px;">
+                    <textarea class="form-control" name="message" id="message" form="contact-form" cols="30" rows="2" placeholder="message" style="margin: 0px 0px 6px 0px;"></textarea>
+                    <input type="submit" class="btn btn-info" style="height: 25px;padding-top: 3px;" value="Send">
+                    <input type="reset" class="btn btn-info" style="height: 25px;padding-top: 3px;" value="Clear">
+                </form>
+            </div> 
+        </div>
+    </div>
+</body>
+
+<script>
+    $('.item').hide();
+
+    $('#about-btn').on('click', function(){  
+        $('.about-me').toggle()
+        $('.contact-me').hide();
+        $('.skills').hide();  
+    })
+
+    $('#skills-btn').on('click', function(){  
+        $('.skills').toggle();
+        $('.about-me').hide();
+        $('.contact-me').hide();    
+    })
+
+    $('#contact-btn').on('click', function(){  
+        $('.contact-me').toggle() 
+        $('.about-me').hide();
+        $('.skills').hide();  
+    })
+
+</script>

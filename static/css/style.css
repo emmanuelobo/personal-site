@@ -1,0 +1,172 @@
+@media screen and (max-width: 768px){
+  .name-header{
+    font-size: 7em !important;
+  }
+  .mobile-menu{
+    margin-top:20px;
+    display: block !important;
+  }
+
+  .nav-menu-item{
+    display: none;
+  }
+
+  .social-icons-container{
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+  }
+}
+
+body {
+    /* background: url('/media/gplaypattern.png'); */
+    background: linear-gradient(#10598d, #276c9de3);
+  }
+  
+  body, h1, p {
+    font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .main{
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  .container-fluid{
+    background-color: #fff;
+  }
+
+  .name-header{
+    font-family: Stencil;
+    cursor: default;
+    font-size: 14em;
+    /* color: hsla(183, 100%, 92%, 1); */
+    color: hsl(51, 100%, 82%);
+  }
+  .nav-menu-item{
+    margin-top: 12px;
+    /* color: #3f3e5f; */
+    color: #fff !important;
+  }
+
+  .navbar{
+    /* width: 100%; */
+    /* background-color: #fff; */
+  }
+
+
+  .nav-menu{
+    list-style: none;
+  }
+
+  .container {
+    margin-left:  auto;
+    margin-right:  auto;
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #fff;
+    height: 85vh;
+  }
+  
+  .row:before, .row:after {
+    display: table;
+    content: " ";
+  }
+
+  .nav-link{
+    color: #bdebf3 !important;
+    font-size: 22px;
+  }
+  
+  a{
+    color: #bdebf3 !important;
+    font-style: none;
+  }
+
+  a:hover{
+    color: #fff !important;
+    font-weight: bold;
+    font-style: none;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+  }
+  
+  .lead {
+    font-size: 21px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin: 0 0 10px;
+  }
+  
+  a {
+    color: #3282e6;
+    text-decoration: none;
+  }
+
+  .box{
+    border: 1px solid black;
+    height: 200px;
+  }
+
+  .about-me-container{
+    margin: auto 10em;
+  }
+
+  .about-me-text{
+    font-size: 16px;
+    color: #423f7c;
+    font-family: Karla;
+  }
+
+  .about-me-title{
+    font-size: 35px !important;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    color: #3f3e5f;
+    font-family: karla;
+  }
+
+  .under-construction-message{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    color: #d33d3d;
+  }
+
+  .social-media-icons{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .social-icons-container{
+    margin-top: 55px;
+  }
+  
+  .bitmoji{
+    margin-top: -15%;
+    margin-left: -5%;
+  }
+
+  .short-bio{
+    text-align: justify;
+    font-size: 17px; 
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -10px;
+  }
+  
