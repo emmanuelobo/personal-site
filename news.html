@@ -62,32 +62,16 @@
                 </div>
               </div>
 
-    <h1 id="nameHeader" class="name-header animated flash" >Manny Ohh!</h1>
+    <h1 id="nameHeader" class="sub-title-header" >News</h1>
     <div class="main"  >
 
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <img class="bitmoji" src="/media/bitmoji-speaker.png" alt="bitmoji" height="300">
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-6">
-              <p class="short-bio" style="font-size: 40px;">
-                  Passionate about tech. 
-                  <br>
-                  I enjoy writing code.
-                  <br>
-                  <b style="color:purple">Python</b> & <b style="color: yellow;">JavaScript</b>.
-                  <br>
-                  Check Out My <a href="http://blog.emmanuelobo.com" style="color:bisque;">Blog</a> ✍️.  
-              </p>
-            </div>
-            
+
         </div>
 
         <div class="row social-icons-container" >
             <div class=""></div>
-            <div class="offset-md-3 col-md-6">
+            <div class="offset-md-2 col-md-7">
                 <a class="social-media-icons" href=""><img  src="/media/github.png" height="40" width="40" alt="github"></a>
 
                 <a class="social-media-icons" href=""><img  src="/media/linkedin.png" height="40" width="40" alt="linkedin"></a>
@@ -110,32 +94,3 @@
 
 </body>
 
-<script>
-        $('#emailModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) // Button that triggered the modal
-            var recipient = button.data('whatever') // Extract info from data-* attributes
-            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-            var modal = $(this)
-            modal.find('.modal-title').text('New message to ' + recipient)
-            modal.find('.modal-body input').val(recipient)
-          })
-
-        $('#nameHeader').on('mouseenter', function(){
-            $(this).removeClass('flash');
-            $(this).addClass('swing');
-        })
-        
-        $('#nameHeader').on('mouseleave', function(){
-            $(this).removeClass('swing');
-        })
-
-        $('.social-media-icons').on('mouseenter', function(){
-            $(this).addClass('bounce');
-        })
-        
-        $('.social-media-icons').on('mouseleave', function(){
-            $(this).removeClass('bounce');
-        })
-        
-</script>

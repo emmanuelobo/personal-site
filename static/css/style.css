@@ -50,6 +50,16 @@ body {
     /* color: hsla(183, 100%, 92%, 1); */
     color: hsl(51, 100%, 82%);
   }
+
+  .sub-title-header{
+    font-family: Stencil;
+    cursor: default;
+    font-size: 5em;
+    /* color: hsla(183, 100%, 92%, 1); */
+    color: hsl(51, 100%, 82%);
+  }
+
+
   .nav-menu-item{
     margin-top: 12px;
     /* color: #3f3e5f; */
@@ -150,11 +160,12 @@ body {
   }
 
   .social-media-icons{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .social-icons-container{
     margin-top: 55px;
+    text-align: center;
   }
   
   .bitmoji{
@@ -169,5 +180,9 @@ body {
     /* font-family: 'Courier New', Courier, monospace; */
     font-family: 'Exo', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: -10px;
+  }
+
+  .center{
+    margin: auto;
   }
   
