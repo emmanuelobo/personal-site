@@ -66,6 +66,10 @@ body {
     color: #fff !important;
   }
 
+  .active-menu-item{
+    color: #fff !important;
+  }
+
   .navbar{
     /* width: 100%; */
     /* background-color: #fff; */
@@ -184,5 +188,9 @@ body {
 
   .center{
     margin: auto;
+  }
+
+  .main{
+    /* min-height: 500px; */
   }
   
