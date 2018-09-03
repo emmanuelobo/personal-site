@@ -106,7 +106,7 @@ body {
   }
 
   a:hover{
-    color: #fff !important;
+    color: #a3c0ef !important;
     font-weight: bold;
     font-style: none;
     text-decoration: none;
@@ -193,4 +193,17 @@ body {
   .main{
     /* min-height: 500px; */
   }
+
+  .dropdown-item{
+    color: purple;
+  }
   
+
+  .dropdown-nav-link{
+    color: #10598d !important;
+    font-size: 22px;
+  }
+
+  .dropdown-menu{
+    left: 25% !important;
+  }
