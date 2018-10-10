@@ -17,6 +17,16 @@
   }
 }
 
+@font-face {
+  font-family: 'Stencil';
+  src: url('stencil.eot'); /* IE9 Compat Modes */
+  src: url('stencil.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('stencil.woff2') format('woff2'), /* Super Modern Browsers */
+       url('stencil.woff') format('woff'), /* Pretty Modern Browsers */
+       url('stencil.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('stencil.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 body {
     /* background: url('/media/gplaypattern.png'); */
     background: linear-gradient(#10598d, #276c9de3), url('/media/gplaypattern.png');
@@ -206,4 +216,27 @@ body {
 
   .dropdown-menu{
     left: 25% !important;
+  }
+
+  .project-container{
+    border: 3px dashed hsla(193, 100%, 87%, 0.616);
+    background-color: #033b64e3;
+    margin: 10px;
+  }
+
+  .project-desc{
+    font-size: 14px;
+    font-family: quicksand, Arial, Helvetica, sans-serif;
+  }
+
+  .tech-stack{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: quicksand, Arial, Helvetica, sans-serif;
+  }
+
+  .project-github-link{
+    font-size: 13px;
+    margin:20px;
+    font-family: quicksand, Arial, Helvetica, sans-serif;
   }

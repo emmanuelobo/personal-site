@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/animate.css">
     <script src="/static/jquery/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -16,17 +17,17 @@
             <div class="col-md-2 mobile-menu dropdown show"> 
                 <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > <img src="/media/dropdown-menu.png" height="45" width="45" alt="dropdown"> </a> 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="nav-link dropdown-item" href="#">Blog</a>
-                    <a class="nav-link dropdown-item" href="#">Work</a>
-                    <a class="nav-link dropdown-item" href="#">News</a>
-                    <a class="nav-link dropdown-item" href="#">About</a>
-                    <a class="nav-link dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-nav-link dropdown-item" href="http://emmanuelobo.com">Home</a>
+                    <a class="dropdown-nav-link dropdown-item" href="http://blog.emmanuelobo.com">Blog</a>
+                    <a class="dropdown-nav-link dropdown-item" href="#">Projects</a>
+                    <a class="dropdown-nav-link dropdown-item" href="/about.html">About</a>
+                    <a class="dropdown-nav-link dropdown-item" href="#" data-toggle="modal" data-target="#emailModal" data-whatever="emmanuel">Contact</a>
                 </div>
             </div>
             
             <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="http://emmanuelobo.com">Home</a> </div>
             <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="http://blog.emmanuelobo.com">Blog</a> </div>
-            <div class="col-md-2 nav-menu-item active-menu-item"> <a class="nav-link" href="/work.html">Work</a> </div>
+            <div class="col-md-2 nav-menu-item active-menu-item"> <a class="nav-link" href="/work.html">Projects</a> </div>
             <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="/about.html">About</a> </div>
             <div class="col-md-2 nav-menu-item"> <a class="nav-link" href="#" data-toggle="modal" data-target="#emailModal" data-whatever="@emmanuel">Contact</a> </div>
             <div class="col-md-1"></div>
@@ -65,38 +66,121 @@
 
       <div class="row">
         <div class="center">
-                <h1 id="nameHeader" class="sub-title-header" >Work</h1>
+                <h1 id="nameHeader" class="sub-title-header" >Projects</h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-8 short-bio">
-            <img src="/media/journal-glasses.jpg" alt="" width="400" height="400">
+        <div class="col-md-1"></div>
+        <div class="col-md-3 project-container short-bio">
+          <h2>Journalize</h2>
 
-            Journalize is your own personal online journal. 
-            Write about the important events in your life. Make your entries look fancy with markup language. 
-            Add a cover picture of your choosing. Will have the option of sharing your entry on social media.
-            <br>
-            Technologies:
-            <br>
-            Django, JavaScript, Python
+          <div class="project-desc">
+              Journalize is your own personal online journal. 
+              Write about the important events in your life. Personalize your entries with the markup editor. 
+              Add a cover picture of your choosing. Have the option of sharing your entry on social media.
+          </div>
+
+          <div class="project-github-link">
+           <a target="_blank" href="https://github.com/emmanuelobo/journalize">view code</a> 
+          </div>
+
+            <div class="tech-stack">
+                Django, JavaScript, Python
+            </div>
+            
         </div>
+
+        
+        <div class="col-md-3 project-container short-bio">
+          <h2>BudgetBoss</h2>
+
+          <div class="project-desc">
+              Having a hard time sticking to a budget? Worry no more, BudgetBoss is here at you service!
+              BudgetBoss helps you create a budget (or multiple budgets) based on your needs and wants.
+              You can keep track of your spending, create lists of items you need/want, export lists, set goals and more!
+          </div>
+
+          
+          <div class="project-github-link">
+            <a target="_blank" href="https://github.com/emmanuelobo/budgetboss">view code</a> 
+          </div>
+          <div class="tech-stack">
+              Django, Angular, PostgreSQL
+            </div>
+          
       </div>
 
-      <hr>
+    <div class="col-md-3 project-container short-bio">
+      <h2>Stat-Watch</h2>
 
-      <div class="row">
-        <div class="col-md-4">Stat-Watch</div>
-        <div class="col-md-8 short-bio">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate laoreet tempor. Donec elit nibh, egestas ut turpis quis, gravida egestas magna. Phasellus a gravida nisi, eu egestas tortor. Curabitur ullamcorper laoreet quam, at convallis dui. Aenean euismod lorem justo, eget fringilla velit varius eget. Proin a mauris at eros laoreet auctor. Pellentesque eget accumsan risus. Morbi eu velit sed mi efficitur commodo at ac mauris. Proin arcu neque, lobortis sed feugiat sed, laoreet ut ligula. Pellentesque odio sem, pellentesque quis odio et, tristique rhoncus lacus. In felis nisi, laoreet ut nisi quis, faucibus facilisis purus. Cras in semper metus. Donec rutrum elit vel dui pharetra bibendum. Praesent ultricies pharetra ipsum eget laoreet. Donec ac quam et leo accumsan maximus.
-
-Sed in ante non tellus consectetur finibus in eget nisl. Maecenas ultrices dapibus laoreet. Vivamus maximus erat imperdiet, lobortis odio quis, dignissim lorem. Aliquam vitae lectus molestie, dignissim tellus a, facilisis turpis. Vestibulum non turpis pretium, molestie ligula eu, hendrerit nulla. Proin facilisis metus in risus feugiat fermentum. Suspendisse sit amet metus ligula. Fusce non felis at lectus maximus bibendum.
-
-Aliquam tincidunt blandit luctus. Phasellus porta sem eu ipsum suscipit, quis tristique nisl mollis. Vestibulum id nisl nec magna gravida tempus lacinia ut ligula. Suspendisse non purus commodo lectus euismod suscipit nec eu dolor. Phasellus ut nunc rutrum, dictum risus at, imperdiet quam. Praesent eu lacus sit amet orci convallis feugiat. Duis eget lacinia nisl, vitae iaculis elit. Mauris convallis erat massa, vel dictum lectus vestibulum non. Ut interdum gravida quam eu dictum. Morbi in enim libero.
+      <div class="project-desc">
+          Keep track of your favorite NBA players.
+          Get up to date stats, compare players, custom alerts on players, latest news, and more using stat-watch.
+          P.S. this is a great tool for fantasy basketball.
         </div>
+      
+        <div class="project-github-link">
+          <a target="_blank" href="https://github.com/emmanuelobo/stat-watch">view code</a> 
+        </div>
+      <div class="tech-stack">
+          Flask, JavaScript, Python, Celery
+        </div>
+      
+     </div>
+  <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3 project-container short-bio">
+          <h2>python-coord</h2>
+          <div class="project-desc">
+              Python API wrapper for the coord.co bike share service.
+              Making it easy for users to access data and/or build services ontop of the API.
+            </div>
+         
+            <div class="project-github-link">
+              <a target="_blank" href="https://github.com/emmanuelobo/python-coord">view code</a> 
+            </div>
+          <div class="tech-stack">
+              Python
+            </div>
+          
+         </div>
+
+        <div class="col-md-3 project-container short-bio">
+          <h2>ig-comment-search</h2>
+          <div class="project-desc">
+              Search for comments or users who commented on a photo fast and efficiently.
+              Cuts out all the hassle of manually searching through the comments section for a comment.
+            </div>
+          
+            <div class="project-github-link">
+              <a target="_blank" href="https://github.com/emmanuelobo/ig-comment-search">view code</a> 
+            </div>
+          <div class="tech-stack">
+              JavaScript, Chrome Dev Extensions
+            </div>
+         
+        </div>
+
+        <div class="col-md-3 project-container short-bio">
+            <h2>nba sentiment</h2>
+            <div class="project-desc">
+                Get a feel for what people a talking about on social media related to the NBA.
+                Real time tweets with a sentiment attached.
+            </div>
+            
+            <div class="project-github-link">
+              <a target="_blank" href="https://github.com/emmanuelobo/twitter-nba-analysis">view code</a> 
+            </div>
+            <div class="tech-stack">
+                Flask, JavaScript, Python
+              </div>
+            
+        </div>
+  </div>
       </div>
+
+
 
 
         
